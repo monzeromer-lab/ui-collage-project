@@ -1,0 +1,39 @@
+{
+  "name": "Pharmacy",
+  "version": "1.0.0",
+  "description": "Wijdan Pharmacy Project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mix",
+    "prod": "mix --production",
+    "watch": "mix watch",
+    "start": "electron main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder build --ia32"
+  },
+  "author": "Osama",
+  "build": {
+    "productName": "Wijdan Project",
+    "appId": "com.Osama.wijdanProject",
+    "copyright": "Copyright © 2021 Osama",
+  "win": {
+    "target": "NSIS" ,
+    "icon": "./icon.png"
+  }
+  },
+  "license": "",
+  "devDependencies": {
+    "asar": "^0.14.6",
+    "electron": "^11.5.0",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "jszip": "^3.6.0",
+    "laravel-mix": "^6.0.25",
+    "notyf": "^3.10.0"
+  }
+}
